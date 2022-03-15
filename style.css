@@ -112,7 +112,8 @@ select {
                         "item-bottoma"
                         "item-bottomb"
                         "item-bottomc"
-                        "footer"					 
+                        "footer"	
+                        				 
   }
 .item-top{
     grid-area: item-top;
@@ -135,13 +136,15 @@ select {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+  width:460px;
+  height:215px;
 }
 
 .item-bottoma{
   grid-area: item-bottoma;
-
   margin: 10px 10px 10px 10px;
   justify-content: center;
+  
 }
 .item-bottomb{
   grid-area: item-bottomb;
@@ -203,5 +206,14 @@ select {
 .item-right {
     grid-area: item-right;
     background-color: blue;
+  }
+  .item-center  iframe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+    width:560px;
+    height:315px;
   }
 }
