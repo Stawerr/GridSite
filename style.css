@@ -1,0 +1,207 @@
+/* #region css reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* #endregion css reset */
+
+.navbar{
+    width: 100%;
+    background-color: #e3011e ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.logosec{
+    background-color: #ed1a23;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-item a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+  }
+
+.logo img {
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto auto auto auto 20% ;
+    grid-template-areas:"item-top"
+                        "item-center" 
+                        "item-bottoma"
+                        "item-bottomb"
+                        "item-bottomc"
+                        "footer"					 
+  }
+.item-top{
+    grid-area: item-top;
+    background-image: url(/img/7968848.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+  }
+
+.item-center {
+    grid-area: item-center;
+    background-color: #ed1a23;
+    display: flex;
+    justify-content: center;
+}
+.item-center  iframe{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.item-bottoma{
+  grid-area: item-bottoma;
+
+  margin: 10px 10px 10px 10px;
+  justify-content: center;
+}
+.item-bottomb{
+  grid-area: item-bottomb;
+  margin: 10px 10px 10px 10px;
+  justify-content: center;
+}
+.item-bottomc{
+  grid-area: item-bottomc;
+  margin: 10px 10px 10px 10px;
+  justify-content: center;
+}
+.footer{
+  grid-area: footer;
+  background-color: #e3011e;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: #ffff;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.card img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+.card article {
+  padding: 1em;
+}
+.card button {
+  cursor: pointer;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% auto auto auto 15%;
+    grid-template-rows: 30% auto auto 15% ;
+    grid-template-areas:"item-top item-top item-top item-top item-top"
+                        "item-left item-center item-center item-center item-right" 
+                        "item-left item-bottoma item-bottomb item-bottomc item-right" 
+                        "footer footer footer footer footer"         					 
+  }
+.item-left {
+    grid-area: item-left;
+    background-color: aqua;
+  }
+.item-center {
+    grid-area: item-center;
+    background-color: black;
+  }
+.item-right {
+    grid-area: item-right;
+    background-color: blue;
+  }
+}
