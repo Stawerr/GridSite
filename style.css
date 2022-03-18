@@ -236,6 +236,56 @@ hr{
   max-height: 250px;
 }
 
+ .buttons a {
+  background: rgba(255, 0, 0, 0);
+  border-bottom: 1px solid;
+  color: rgb(0, 0, 0);
+  line-height: 1.4;
+  padding: 0.25em;
+  text-decoration: none;
+}
+.buttons a:hover {
+  background: white;
+  color: #E1332D;
+}
+
+.btn {
+    
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .container{
@@ -261,15 +311,17 @@ hr{
     gap: 10px;
     padding: 0 15%;
   }
+  
   .containerAbout{
     display: grid;
     background-color: black; 
     grid-template-columns: auto 40% ;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:"about review"
-                        
+  }  
   
-  }                     
+  
+  
 .sobre{
   grid-area: about;
   
@@ -286,4 +338,6 @@ hr{
 .review h2{
   color: white;
 }
+
+
 }
