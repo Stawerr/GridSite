@@ -76,6 +76,10 @@ select {
 body{
   font-family: 'Roboto', sans-serif;
 }
+::selection {
+  color: red;
+  background: rgb(0, 0, 0);
+}
 .navbar{
     width: 100%;
     background-color: #e3011e ;
@@ -97,6 +101,9 @@ body{
     color: black;
     font-size: large;
   }
+  .nav-item a:hover {
+    text-decoration: underline;
+}
 
 .logo img {
     width: 175px;
@@ -188,18 +195,18 @@ hr{
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  background: #000000;
+  color: #e3011e;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+  background: #000000;
+  color: #e3011e;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+  background: #000000;
+  color: #e3011e;
 }
 
 .containerAbout{
